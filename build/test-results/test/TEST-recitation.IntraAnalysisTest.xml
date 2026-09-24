@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="recitation.IntraAnalysisTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-24T22:57:39" hostname="codespaces-0975ac" time="0.52">
+<testsuite name="recitation.IntraAnalysisTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-24T23:17:34" hostname="codespaces-0975ac" time="0.495">
   <properties/>
-  <testcase name="testIntraAnalysis" classname="recitation.IntraAnalysisTest" time="0.52"/>
+  <testcase name="testIntraAnalysis" classname="recitation.IntraAnalysisTest" time="0.495"/>
   <system-out><![CDATA[Initializing tests
 Done initializing
-Soot started on Thu Sep 24 22:57:39 UTC 2026
+Soot started on Thu Sep 24 23:17:35 UTC 2026
 JIdentityStmt:	r0 := @this: inputs.DefsTest	[r0@L-1]
 JInvokeStmt:	specialinvoke r0.<java.lang.Object: void <init>()>()	[r0@L-1]
 JReturnVoidStmt:	return	[r0@L-1]
@@ -15,20 +15,20 @@ JAssignStmt:	i7 = 0	[i6@L6, $i0@L7, i1@L7, i7@L8]
 JAssignStmt:	i8 = i6 * 3	[i6@L6, $i0@L7, i8@L9, i1@L7, i7@L8]
 JAssignStmt:	i9 = 0	[i9@L11, i6@L6, $i0@L7, i8@L9, i1@L7, i7@L8]
 JIfStmt:	if i9 >= 10 goto (branch)	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	i7 = i7 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	i8 = i8 - 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	i9 = i9 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JGotoStmt:	goto [?= (branch)]	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+JAssignStmt:	i7 = i7 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13]
+JAssignStmt:	i8 = i8 - 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
+JAssignStmt:	i9 = i9 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
+JGotoStmt:	goto [?= (branch)]	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
 JIfStmt:	if i7 <= 4 goto i10 = i8 + 4	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	i6 = 4	[i9@L11, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	i10 = i8 + 3	[i9@L11, i10@L18, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-JGotoStmt:	goto [?= $i2 = i10 + i6]	[i9@L11, i10@L18, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+JAssignStmt:	i6 = 4	[i9@L11, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+JAssignStmt:	i10 = i8 + 3	[i9@L11, i10@L18, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+JGotoStmt:	goto [?= $i2 = i10 + i6]	[i9@L11, i10@L18, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
 JAssignStmt:	i10 = i8 + 4	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	$i2 = i10 + i6	[i9@L11, i10@L18, $i2@L23, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	$i3 = $i2 + i7	[$i3@L23, i7@L12, $i0@L7, i9@L11, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-JAssignStmt:	$i4 = $i3 + i1	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-JReturnStmt:	return $i4	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-Soot finished on Thu Sep 24 22:57:39 UTC 2026
+JAssignStmt:	$i2 = i10 + i6	[i9@L11, i10@L18, $i2@L23, i7@L12, i6@L17, $i0@L7, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+JAssignStmt:	$i3 = $i2 + i7	[$i3@L23, i7@L12, $i0@L7, i9@L11, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+JAssignStmt:	$i4 = $i3 + i1	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+JReturnStmt:	return $i4	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+Soot finished on Thu Sep 24 23:17:35 UTC 2026
 Soot has run for 0 min. 0 sec.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

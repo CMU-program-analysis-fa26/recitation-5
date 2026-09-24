@@ -1,6 +1,6 @@
 Initializing tests
 Done initializing
--Soot started on Thu Sep 24 22:57:39 UTC 2026
+-Soot started on Thu Sep 24 23:17:35 UTC 2026
 5JIdentityStmt:	r0 := @this: inputs.DefsTest	[r0@L-1]
 KJInvokeStmt:	specialinvoke r0.<java.lang.Object: void <init>()>()	[r0@L-1]
 !JReturnVoidStmt:	return	[r0@L-1]
@@ -11,18 +11,18 @@
 >JAssignStmt:	i8 = i6 * 3	[i6@L6, $i0@L7, i8@L9, i1@L7, i7@L8]
 AJAssignStmt:	i9 = 0	[i9@L11, i6@L6, $i0@L7, i8@L9, i1@L7, i7@L8]
 `JIfStmt:	if i9 >= 10 goto (branch)	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-VJAssignStmt:	i7 = i7 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-VJAssignStmt:	i8 = i8 - 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-VJAssignStmt:	i9 = i9 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-[JGotoStmt:	goto [?= (branch)]	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+OJAssignStmt:	i7 = i7 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13]
+HJAssignStmt:	i8 = i8 - 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
+HJAssignStmt:	i9 = i9 + 1	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
+MJGotoStmt:	goto [?= (branch)]	[i9@L11, i7@L12, i6@L6, $i0@L7, i1@L7, i8@L13]
 cJIfStmt:	if i7 <= 4 goto i10 = i8 + 4	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-YJAssignStmt:	i6 = 4	[i9@L11, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-hJAssignStmt:	i10 = i8 + 3	[i9@L11, i10@L18, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
-rJGotoStmt:	goto [?= $i2 = i10 + i6]	[i9@L11, i10@L18, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+RJAssignStmt:	i6 = 4	[i9@L11, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+aJAssignStmt:	i10 = i8 + 3	[i9@L11, i10@L18, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
+kJGotoStmt:	goto [?= $i2 = i10 + i6]	[i9@L11, i10@L18, i7@L12, i6@L17, $i0@L7, i8@L9, i1@L7, i8@L13, i7@L8]
 `JAssignStmt:	i10 = i8 + 4	[i9@L11, i7@L12, i6@L6, $i0@L7, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-|JAssignStmt:	$i2 = i10 + i6	[i9@L11, i10@L18, $i2@L23, i7@L12, i6@L17, i6@L6, $i0@L7, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-…JAssignStmt:	$i3 = $i2 + i7	[$i3@L23, i7@L12, $i0@L7, i9@L11, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-ŽJAssignStmt:	$i4 = $i3 + i1	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-ŠJReturnStmt:	return $i4	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i6@L6, i8@L9, i10@L20, i1@L7, i8@L13, i7@L8]
-.Soot finished on Thu Sep 24 22:57:39 UTC 2026
+|JAssignStmt:	$i2 = i10 + i6	[i9@L11, i10@L18, $i2@L23, i7@L12, i6@L17, $i0@L7, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+…JAssignStmt:	$i3 = $i2 + i7	[$i3@L23, i7@L12, $i0@L7, i9@L11, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+ŽJAssignStmt:	$i4 = $i3 + i1	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+ŠJReturnStmt:	return $i4	[$i3@L23, i7@L12, $i0@L7, i9@L11, $i4@L23, i10@L18, $i2@L23, i6@L17, i8@L9, i6@L6, i10@L20, i1@L7, i8@L13, i7@L8]
+.Soot finished on Thu Sep 24 23:17:35 UTC 2026
 Soot has run for 0 min. 0 sec.

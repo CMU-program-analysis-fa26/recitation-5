@@ -1,21 +1,19 @@
 09/27/24 Recitation
 ==================
 
-17-355/17-665/17-819: Program Analysis (Fall 2024)
+17-355/17-665/17-819: Program Analysis (Fall 2026)
 ----------------------------------------------------
 
-This repository is a recitation template.
-The code presented here uses Soot to perform Definitions Analysis, keeping a 
-list of all variable definitions with their line numbers.
-In this recitation, we consider how to extend it to keeping track of just the
-most recent assignment of a variable by modifying the `flowThrough` method in 
-`IntraDefsAnalysis`.
+In this recitation, you will get hands-on experience on how to use Soot to analyze Java code.
 
-## Building
+The code presented in this repository uses Soot to perform Definitions Analysis, keeping a list of all variable definitions with their line numbers. In this recitation, we will consider how to extend it to keep track of just the most recent assignment of a variable (i.e., Reaching Definitions) by modifying the `flowThrough` method in `IntraDefsAnalysis`.
 
-1. Open this repository using **GitHub Codespaces with the 4-core VM option**. 
-2. Run/test your implementation inside the codespace environment by running at the command line: ./gradlew test
-3. You can use VSCode's debugger by setting breakpoints on your code, and selecting the **debug icon under test on the gradle icon**.
+## Running the Code
+
+1. Create a **fork** of this repository.
+2. Open this repository using **GitHub Codespaces with the 4-core VM option**. 
+
+Whenever you wish to run your implementation to see the results of your analysis on an example code, run `./gradlew test`.
 
 ## File Structure
 
@@ -23,6 +21,12 @@ most recent assignment of a variable by modifying the `flowThrough` method in
 
 `IntraDefsAnalysis`, extending Soot's `ForwardFlowAnalysis`, contains the code we're 
 interested in changing.
+
+## Tasks
+
+First, **look through the `IntraDefsAnalysis` class**. What are the **ingredients of the analysis**? Look for the lattice, the definition of `sigma`, the definition of things like `Top` and `Bot`, and the flow function. 
+
+Then, **modify the `IntraDefsAnalysis` class to instead perform Reaching Definitions analysis**. Recall the ingredients for the Reaching Definitions analysis (the `GEN`/`KILL` functions, the flow function, etc.)
 
 ## Dependencies
 
