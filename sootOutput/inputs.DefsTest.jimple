@@ -1,0 +1,63 @@
+public class inputs.DefsTest extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        inputs.DefsTest r0;
+
+        r0 := @this: inputs.DefsTest;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static int test()
+    {
+        int $i0, i1, $i2, $i3, $i4, i6, i7, i8, i9, i10;
+
+        i6 = 3 + 4;
+
+        $i0 = i6 - 3;
+
+        i1 = $i0 * 2;
+
+        i7 = 0;
+
+        i8 = i6 * 3;
+
+        i9 = 0;
+
+     label1:
+        if i9 >= 10 goto label2;
+
+        i7 = i7 + 1;
+
+        i8 = i8 - 1;
+
+        i9 = i9 + 1;
+
+        goto label1;
+
+     label2:
+        if i7 <= 4 goto label3;
+
+        i6 = 4;
+
+        i10 = i8 + 3;
+
+        goto label4;
+
+     label3:
+        i10 = i8 + 4;
+
+     label4:
+        $i2 = i10 + i6;
+
+        $i3 = $i2 + i7;
+
+        $i4 = $i3 + i1;
+
+        return $i4;
+    }
+}
